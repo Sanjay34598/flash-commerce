@@ -1,0 +1,7 @@
+{
+  "milk": {"price": 50, "qty": 10},
+  "eggs": {"price": 60, "qty": 12},
+  "bread": {"price": 30, "qty": 8},
+  "water": {"price": 20, "qty": 20},
+  "banana": {"price": 10, "qty": 30}
+}
