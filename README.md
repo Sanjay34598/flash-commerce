@@ -23,3 +23,46 @@ It simulates a system where:
 
 ## 🧩 Architecture Overview
 
+User → Order → AI Dispatcher → Drone Assignment → Simulated Delivery
+↓
+Inventory Update
+
+
+- **Frontend:** HTML, JS  
+- **Backend:** Flask (Python)  
+- **Database:** JSON-based (mock inventory)  
+- **Drone Simulation:** Python threading + distance calculation (Haversine formula)
+
+---
+
+## 🚀 Demo (How It Works)
+
+1️⃣ Start the backend:  
+```bash
+cd backend
+python -m venv env
+source env/bin/activate  # or env\Scripts\activate on Windows
+pip install -r requirements.txt
+python app.py
+
+2️⃣ Open the front-end:
+Open frontend/index.html in your browser.
+
+3️⃣ Place an order:
+
+Choose items like “milk”, “eggs”, “bread”.
+
+Enter your (lat, lng).
+
+Click “Place Order”.
+
+4️⃣ Watch the magic ✨
+
+Backend assigns a drone.
+
+Status updates live:
+received → scheduling → drone_assigned → in_transit → delivered.
+
+
+
+
