@@ -1,0 +1,28 @@
+<!-- frontend/index.html -->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>AI Quick Commerce (Prototype)</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>AI Quick Commerce — Demo</h1>
+    <div id="inventory"></div>
+    <h3>Place Order</h3>
+    <label>Customer name: <input id="customer" value="Sanjay"/></label><br/>
+    <label>Latitude: <input id="lat" value="17.412"/></label>
+    <label>Longitude: <input id="lng" value="78.45"/></label>
+    <div id="items"></div>
+    <button id="place">Place Order</button>
+
+    <h3>Order Status</h3>
+    <div id="order-status">No orders yet.</div>
+
+    <h3>Fleet</h3>
+    <div id="fleet"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
